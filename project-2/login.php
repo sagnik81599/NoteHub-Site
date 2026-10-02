@@ -70,9 +70,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <body>
 
 
-<!-- <div class="text-end p-2">
-  <button class="btn btn-sm btn-outline-dark" id="toggleDark">ðŸŒ™ Dark Mode</button>
-</div> -->
 
 
 <!--  Loader -->
@@ -160,7 +157,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
       document.getElementById('loader').style.display = 'flex';
       setTimeout(() => {
         window.location.href = this.href;
-      }, 800); // slight delay for UX
+      }, 800); 
     });
   });
 
@@ -175,7 +172,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 // Hide loader on page load
 
-  // Athe loader when page is shown (includes back/forward navigation)
   window.addEventListener("pageshow", function (event) {
     const loader = document.getElementById("loader");
     if (loader) {
